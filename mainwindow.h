@@ -22,13 +22,21 @@ public:
     ~MainWindow();
 private slots:
     void downloadFinish(QNetworkReply *reply);
+    void downloadFinish_predpoved(QNetworkReply *reply);
+
 
 
     void on_pushButton_clicked();
 
 
+
+
+
 private:
     QNetworkAccessManager manager;
+    QNetworkAccessManager manager_predpoved;
+
+
 
      Ui::MainWindow *ui;
 

@@ -17,6 +17,14 @@ QUrl Weather::getUrl()
 
 }
 
+QUrl Weather::getUrl_Predpoved()
+{
+    QUrl url("https://api.openweathermap.org/data/2.5/forecast");
+    query.addQueryItem("appid", API_KEY);
+    url.setQuery(query);
+    return url;
+}
+
  void Weather::addQuery(QString key, QString value)
 {
     this->query.addQueryItem(key,value);

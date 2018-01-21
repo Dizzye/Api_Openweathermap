@@ -13,6 +13,7 @@ public:
 
 
   QUrl getUrl();
+  QUrl getUrl_Predpoved();
    void addQuery(QString key, QString value);
     void clear();
 
